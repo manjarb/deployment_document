@@ -4,4 +4,4 @@ Deployment List
   - Initial Server Setup with Ubuntu
   - Nginx setup
   - Nodejs setup
-  - Setup Github and cloning Reposity
+  - Setup Github and cloning Repository
