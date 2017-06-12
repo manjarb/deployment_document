@@ -1,4 +1,4 @@
-#Install and Use PostgreSQL on Ubuntu
+# Install and Use PostgreSQL on Ubuntu
 
 **Installation**
 ```sh
