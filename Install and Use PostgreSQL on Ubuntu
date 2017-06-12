@@ -1,3 +1,5 @@
+#Install and Use PostgreSQL on Ubuntu
+
 **Installation**
 ```sh
 local $ ssh user@your_server_ip
