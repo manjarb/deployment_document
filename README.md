@@ -7,3 +7,4 @@ Deployment List
   - Setup Github and cloning Repository
   - Install and Use PostgreSQL on Ubuntu
   - Use PostgreSQL with Your Ruby on Rails Application on Ubuntu
+  - Deploying a Rails App on Ubuntu with Capistrano, Nginx, and Puma
