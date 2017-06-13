@@ -233,7 +233,7 @@ server {
   client_max_body_size 10M;
   keepalive_timeout 10;
 }
-```sh
+```
 
 **Step 7 — Deploying your Rails Application**
 Again, from your local machine, make your first deployment:
