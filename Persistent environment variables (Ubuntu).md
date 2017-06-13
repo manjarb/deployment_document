@@ -1,4 +1,4 @@
-# Persistent environment variables
+# Persistent environment variables (Ubuntu)
 
 ```sh
 remote $ ~/.pam_environment
