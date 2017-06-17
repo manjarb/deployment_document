@@ -284,11 +284,7 @@ cron will now run this command daily. All installed certificates will be automat
 
 
 Reference
-The 15 3 * * * part of this line means "run the following command at 3:15 am, every day". You may choose any time.
-
-The renew command for Certbot will check all certificates installed on the system and update any that are set to expire in less than thirty days. --quiet tells Certbot not to output information nor wait for user input. --renew-hook "/bin/systemctl reload nginx" will reload Nginx to pick up the new certificate files, but only if a renewal has actually happened.
-
-cron will now run this command daily. All installed certificates will be automatically renewed and reloaded when they have thirty days or less before they expire.
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04#prerequisites
 
 
 
