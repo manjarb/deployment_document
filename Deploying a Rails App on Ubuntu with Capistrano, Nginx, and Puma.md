@@ -104,7 +104,7 @@ Replace the contents of config/deploy.rb with the following, updating fields mar
 config/deploy.rb
 
 # Change these
-server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
+#server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@example.com:username/appname.git'
 set :application,     'appname'
@@ -180,10 +180,19 @@ namespace :deploy do
       invoke 'puma:restart'
     end
   end
+  
+  desc 'clear temp cache'
+  task :clear_cache do
+    on roles(:app) , in: :sequence, wait: 1 do
+      execute "rm -rf #{shared_path}/tmp/cache/[^.]*"
+
+    end
+  end
 
   before :starting,     :check_revision
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
+  after  :finishing,    :clear_cache
   after  :finishing,    :restart
 end
 
