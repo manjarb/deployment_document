@@ -245,8 +245,19 @@ server {
 ```
 
 **Step 7 — Deploying your Rails Application**
+
 Again, from your local machine, make your first deployment:
 ```sh
+remote $ sudo nano ~/.pam_environment
+```
+Add new content following this pattern
+```sh
+SECRET_KEY_BASE=xxxxxxxxx
+REPONAME_DATABASE_PASSWORD=yyyyyyy
+```
+Then make first deployment
+```sh
+remote $ sudo apt-get install libpq-dev
 local $ cap production deploy:initial
 ```
 
